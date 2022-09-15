@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Making A New Command</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+</head>
+<body>
+	<navbarContainer></navbarContainer>
+	<br><br>
+	<div class="container">
+		<h1>Making A New Command</h1>
+		<br>
+		<span>To make a new command, you will have to follow the following steps: </span>
+		<br><br>
+		<h5>Step 1: Remix the Py50 Code Running Test Project</h5>
+		<p>
+			First you will have to go to the <a target="_blank" href="https://scratch.mit.edu/projects/694314107/">Py50 Code Running Test</a> Project. Its an experimental playground for Py50. It contains only the compiler for the Py50 Code.
+			After you go to the project, Remix it.
+		</p>
+		<h5>Step 2: Get familiar with the playground</h5>
+		<p>
+			The playground is just Py50 but without a code editor. To add code, you have to use the "Write Code (Code)" custom block under the "Write Code" message in the Stage.
+		</p>
+		<h5>Step 3: Defining your command</h5>
+		<p>
+			Now before you code up the command, you have to define it. This is done so that the compiler can differentiate between variable configurations and commands. To define your command, you need to go to the Stage and under the the "When Green Flag Clicked" hat block, before the brodcasts, use the "Add New Command: (Command)" custom block to define your command.
+		</p>
+		<h5>Step 4: Code!</h5>
+		<p>
+			After defining your command, its time to code it. Go to the run sprite and find the "Run Code" defination. In the else of the "if <(Commands) contains (Content)?>", put an if-else and in the condition put "<(Content) = (command_name)>". Now make a new block and name it according to the command_name. Now put the call for the custom block in the if and in the else you can keep adding commands.
+		</p>
+		<h5>Step 5: Share!</h5>
+		<p>
+			Once the command is ready, you can share the project. I will check and see if it is really worth adding.
+		</p>
+		<h5>Step 6: Docs</h5>
+		<p>
+			Once your command is accepted, you will be commented to prepare the docs of your command. Fork the <a href="https://github.com/Platformer444/py50-website/">py50-website</a> repository on github(You require a GitHub account for this). Once you have forked the repository, you can start creating the Docs. Once the docs is created, you can open a pull request and I will review it and merge.
+		</p>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
